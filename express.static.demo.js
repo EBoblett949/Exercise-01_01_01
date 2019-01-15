@@ -10,6 +10,8 @@ var app = express();
 // the port number
 var port = 8080;
 
+app.use(express.static(__dirname));
+
 app.listen(port, function() {
     console.log("Serving listening on localhost:%s",port);
 });
